@@ -1,14 +1,92 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Leafclutch Project</title>
-</head>
-<body>
-  <h1>My Project Index</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leafclutch Project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <a href="03_Selectors/selectors.html">Selectors Page</a><br>
-  <a href="01_basics/indexx.html">Basics Page</a><br>
-  <a href="02_loginproject/login.html">Login Page</a>
+      body {
+        background-color: #f4f1eb; 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #2e2c2b; 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 2rem;
+      }
 
-</body>
+      header {
+        text-align: center;
+        margin-bottom: 4rem;
+        width: 100%;
+        max-width: 1100px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #3e4b43; 
+      }
+
+      .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem; 
+        width: 100%;
+        max-width: 1100px;
+      }
+    
+      .project-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        padding: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        font-weight: 400;
+        letter-spacing: 0.12em;
+        color: #55524f;
+        background-color: #ffffff; 
+        border: 1px solid #e8e5e0;
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+        transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      
+      .project-card:hover {
+        color: #f4f1eb;
+        background-color: #3e4b43; 
+        border-color: #3e4b43;
+        letter-spacing: 0.16em;
+        transform: translateY(-4px); 
+        box-shadow: 0 12px 24px rgba(62, 75, 67, 0.12); 
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>My Project Index</h1>
+    </header>
+
+    <main class="nav-grid">
+      <a href="03_Selectors/selectors.html" class="project-card">Selectors Page</a>
+      <a href="01_basics/indexx.html" class="project-card">Basics Page</a>
+      <a href="02_loginproject/login.html" class="project-card">Login Page</a>
+      
+      </main>
+
+  </body>
 </html>
