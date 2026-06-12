@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+    <style>
+    .grid-container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:10px ;
+        background-color: antiquewhite;
+    }
+    .grid-item{
+        background-color: red;
+        padding: 30px 100px;
+        border-radius: 12px;
+    }
+    a{
+            margin-top: 100px;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Grid:</h1>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <a href="./index.html">go back</a>
+</body>
+</html>
+    
